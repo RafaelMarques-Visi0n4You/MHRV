@@ -76,6 +76,11 @@ app.use('/api', reuniaoRoutes.routes);
 app.use('/api', participanteRoutes.routes);
 app.use('/api', entrevistaRoutes.routes);
 
+//Verifar se esta OK
+app.get('/check', (req, res) => {
+  res.status(200).send({ message: "Wecolme to MHRS API" });
+});
+
 app.listen(config.port, () => {
   console.log('app listening on url http://localhost:' + config.port )
 });
