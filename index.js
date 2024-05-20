@@ -82,5 +82,5 @@ app.get('/check', (req, res) => {
 });
 
 app.listen(config.port, () => {
-  console.log('app listening on url http://localhost:' + config.port )
+  console.log('app listening on url ' + config.HOST_URL )
 });
